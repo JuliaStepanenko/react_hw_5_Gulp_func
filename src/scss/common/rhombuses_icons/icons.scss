@@ -1,0 +1,23 @@
+.icon-key:after {
+  background-image: url("../images/icons/key.svg");
+  background-size: 70%;
+  transform: rotate(315deg);
+}
+
+.icon-briefcase:after {
+  background-image: url("../images/icons/briefcase.svg");
+  background-size: 50%;
+}
+
+.icon-chat-quote:after {
+  background-image: url("../images/icons/chat_quote.svg");
+  background-size: 55%;
+  background-color: $bg_col_icon_offers;
+  transform: rotate(315deg);
+}
+
+.icon-play:after {
+  background-image: url("../images/icons/play_ill.svg");
+  background-size: 60%;
+  transform: rotate(30deg);
+}

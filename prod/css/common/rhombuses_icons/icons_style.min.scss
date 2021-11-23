@@ -1,0 +1,23 @@
+.icon-base:before, .icon-base:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 49.5%;
+  top: -20px;
+}
+
+.icon-base:before {
+  background-color: $bG_col_offers_active;
+  border-radius: 5px;
+  transform: rotate(45deg);
+
+}
+
+.icon-base:after {
+  border-radius: 5px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}

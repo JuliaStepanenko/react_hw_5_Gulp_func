@@ -1,0 +1,21 @@
+@mixin head_line_wid($banner_title_line){
+ width: $banner_title_line;
+}
+
+@mixin head_title_icons($icon_w, $icon_h, $icon_o){
+  width: $icon_w;
+  height: $icon_h;
+  opacity: $icon_o;
+}
+
+@mixin our_work_item_bg($prop){
+  background-image: url($prop);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin our_team_item_bg($our_team_item){
+  background-image: url($our_team_item);
+  background-size: 50%;
+  transform: rotate(315deg);
+}

@@ -1,0 +1,67 @@
+%display_align_center{
+  display: flex;
+  align-items: center;
+}
+
+%display_j_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%display_column{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+%icons_title_atrib{
+  background-color: $ct_banner_marc;
+  transform: rotate(45deg);
+  border-radius: 3px;
+}
+
+%style_heading_atrib{
+  text-align: center;
+  color: $ct_banner_main;
+  font-family: $font_family_h1;
+  font-size: $fs_banner_p_style;
+  text-transform: uppercase;
+  margin: 0 20px;
+
+  .style_word {
+    color: $ct_banner_marc;
+  }
+}
+
+%navigation_link{
+  text-decoration: none;
+  color: $ct_navigat;
+  font-family: $font_family_h1;
+  line-height: initial;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $ct_banner_marc;
+    color: $ct_banner_secjnd;
+  }
+}
+
+%gobelin{
+  width: 40px;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+%gobelin_color_front{
+  background: linear-gradient(-35deg, transparent 14px, #404040 0) right, linear-gradient(35deg, transparent 14px, #404040 0) left;
+}
+
+%gobelin_color_back{
+  background: linear-gradient(-35deg, transparent 14px, #00a99d 0) right, linear-gradient(35deg, transparent 14px, #00a99d 0) left;
+}

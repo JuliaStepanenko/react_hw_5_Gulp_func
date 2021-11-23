@@ -1,0 +1,116 @@
+.headline_banner {
+  display: flex;
+  justify-content: center;
+
+  .style_wrapper_left {
+    @extend %display_align_center;
+    @include head_line_wid(29%);
+
+    .Line_styles_left {
+      width: 100%;
+      margin-right: 10px;
+
+      .line_top {
+        margin-bottom: 4px;
+      }
+
+      .line_top,
+      .line_bot {
+        height: 1px;
+        background: linear-gradient(to left, #bababa 102%, #f1f1f100 100%);
+      }
+    }
+
+    .icons_row_left {
+      @extend %display_align_center;
+
+      .icons_row_rhombus_1,
+      .icons_row_rhombus_2,
+      .icons_row_rhombus_3{
+        @extend %icons_title_atrib;
+      }
+
+      .icons_row_rhombus_1 {
+        @include head_title_icons( 10px, 10px, 0.4);
+      }
+
+      .icons_row_rhombus_2 {
+        margin-left: -2px;
+        @include head_title_icons( 13px, 13px, 0.7);
+      }
+
+      .icons_row_rhombus_3 {
+        margin-left: -3px;
+        @include head_title_icons( 15px, 15px, 1);
+      }
+    }
+  }
+
+  .style_heading {
+    @extend %style_heading_atrib;
+    @include head_line_wid(40%);
+  }
+
+  .style_wrapper_right {
+    @extend %display_align_center;
+    @include head_line_wid(29%);
+
+    .icons_row_right {
+      margin-right: 10px;
+      @extend %display_align_center;
+
+      .icons_row_rhombus_1,
+      .icons_row_rhombus_2,
+      .icons_row_rhombus_3{
+        @extend %icons_title_atrib;
+      }
+
+      .icons_row_rhombus_3 {
+        margin-right: -3px;
+        @include head_title_icons( 15px, 15px, 1);
+      }
+
+      .icons_row_rhombus_2 {
+        margin-right: -2px;
+        @include head_title_icons( 13px, 13px, 0.7);
+      }
+
+      .icons_row_rhombus_1 {
+        @include head_title_icons( 10px, 10px, 0.4);
+      }
+    }
+
+    .Line_styles_right{
+      width: 100%;
+
+      .line_top {
+        margin-bottom: 4px;
+      }
+
+      .line_top,
+      .line_bot {
+        height: 1px;
+        background: linear-gradient(to right, #bababa 102%, #f1f1f100 100%);
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1400px ) {
+
+  .headline_banner {
+    .style_wrapper_left {
+      @include head_line_wid(39%);
+
+    }
+
+    .style_heading {
+      @include head_line_wid(23%);
+    }
+
+    .style_wrapper_right {
+      @include head_line_wid(39%);
+    }
+  }
+}
